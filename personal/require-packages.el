@@ -1,1 +1,3 @@
-(prelude-require-package '(solarized-theme))
+(prelude-require-packages '(solarized-theme
+                            purescript-mode
+                            haskell-mode))
