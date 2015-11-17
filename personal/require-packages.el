@@ -3,4 +3,5 @@
                             haskell-mode
                             flycheck-pyflakes
                             python-mode
+                            n3-mode
                             ))
