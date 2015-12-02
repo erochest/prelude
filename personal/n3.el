@@ -1,3 +1,4 @@
+(autoload 'n3-mode "n3-mode" "Major mode for OWL or N3 files" t)
 (setq auto-mode-alist
       (append
        (list
