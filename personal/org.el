@@ -12,3 +12,6 @@
 
 (mapc 'load '("org-sync" "org-sync-github"))
 (require 'org-trello)
+
+(setq org-agenda-files (file-expand-wildcards "~/Dropbox/notes/trello/*.org"))
+(setq org-mob-directory "~/Dropbox/org/")
