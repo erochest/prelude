@@ -13,7 +13,10 @@
 (mapc 'load '("org-sync" "org-sync-github"))
 (require 'org-trello)
 
-(setq org-agenda-files (file-expand-wildcards "~/Dropbox/notes/trello/*.org"))
+(setq org-agenda-files
+      (append
+       (file-expand-wildcards "~/Dropbox/notes/trello/*.org")
+       (file-expand-wildcards "~/Dropbox/notes/slab/neatline-*.org")))
 (setq org-mobile-directory "~/Dropbox/org/")
 (setq org-directory "~/Dropbox/notes/")
 (setq org-mobile-inbox-for-pull "~/Dropbox/notes/inbox.org")
