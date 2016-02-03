@@ -16,7 +16,9 @@
 (setq org-agenda-files
       (append
        (file-expand-wildcards "~/Dropbox/notes/trello/*.org")
-       (file-expand-wildcards "~/Dropbox/notes/slab/neatline-*.org")))
+       (file-expand-wildcards "~/Dropbox/notes/slab/neatline-*.org")
+       (list "/Users/err8n/Dropbox/notes/slab/planning-2016-01-14.org")))
+
 (setq org-mobile-directory "~/Dropbox/org/")
 (setq org-directory "~/Dropbox/notes/")
 (setq org-mobile-inbox-for-pull "~/Dropbox/notes/inbox.org")
