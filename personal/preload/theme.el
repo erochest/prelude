@@ -1,2 +1,2 @@
-; (setq prelude-theme 'solarized-light)
-(setq prelude-theme 'flatui)
+(setq prelude-theme 'solarized-light)
+; (setq prelude-theme 'flatui)

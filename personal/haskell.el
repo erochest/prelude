@@ -1,4 +1,4 @@
-(require 'haskell-mode)
+;(require 'haskell-mode)
 (require 'haskell-cabal)
 (require 'flycheck-haskell)
 
@@ -14,8 +14,7 @@
   (define-key haskell-mode-map (kbd "C-`") 'haskell-interactive-bring)
   (define-key haskell-mode-map (kbd "C-c C-t") 'haskell-process-do-type)
   (define-key haskell-mode-map (kbd "C-c C-i") 'haskell-process-do-info)
-  (define-key haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
-  (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space))
+  (define-key haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear))
 
 (custom-set-variables
  '(haskell-mode-hook

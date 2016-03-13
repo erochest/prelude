@@ -1,3 +1,6 @@
+(setq org-modules (append
+                   (list 'org-habit)
+                   org-modules))
 (setq org-capture-templates
       '(("j" "Journal entry" entry
          (file+datetree+prompt "~/Dropbox/notes/journal.org")
@@ -10,16 +13,14 @@
          "* %T\n%?")
         ))
 
-(global-set-key (kbd "C-c C-j") 'org-capture)
+(global-set-key (kbd "C-c c") 'org-capture)
 
 (mapc 'load '("org-sync" "org-sync-github"))
-(require 'org-trello)
+; (require 'org-trello)
 
 (setq org-agenda-files
       (append
-       (file-expand-wildcards "~/Dropbox/notes/trello/*.org")
-       (file-expand-wildcards "~/Dropbox/notes/slab/neatline-*.org")
-       (list "~/Dropbox/notes/slab/planning-2016-01-14.org")))
+       (file-expand-wildcards "~/Dropbox/notes/agenda/*.org")))
 
 (setq org-mobile-directory "~/Dropbox/org/")
 (setq org-directory "~/Dropbox/notes/")
